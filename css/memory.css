@@ -1,0 +1,50 @@
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+    margin: 8px 0;
+  }
+
+  #turnoActual {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+}
+
+/* Teléfonos (4 columnas de 12 filas) */
+@media (max-width: 480px) {
+  .tablero {
+    grid-template-columns: repeat(4, 60px);
+  }
+
+  .carta {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+}
+
+/* Tablets (6 columnas de 8 filas) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .tablero {
+    grid-template-columns: repeat(6, 60px);
+  }
+
+  .carta {
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+  }
+}
+
+/* Escritorio (8 columnas de 6 filas) */
+@media (min-width: 769px) {
+  .tablero {
+    grid-template-columns: repeat(8, 60px);
+  }
+
+  .carta {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+  }
+}
